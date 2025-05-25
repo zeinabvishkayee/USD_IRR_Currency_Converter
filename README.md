@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+مبدل ارز USD به IRR و بالعکس
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  "توضیح کلی پروژه":
+ 
+ پروژه ی انجام شده مربوط به تبدیل ارز بین دلار آمریکا (USD) و ریال ایران (IRR) است. در این اپلیکیشن، کاربر مقدار ارز (به عنوان ورودی دلار یا ریال) را وارد میکند و با یک کلیک، تبدیل ارز به سرعت انجام می‌شود. نرخ ثابت ( 830,000 برای USD به IRR) استفاده شده است.
+هدف این پروژه استفاده از React و TypeScript برای یادگیری بیشتر اینجانب ، برای کارفرمای محترم مجموعه ارسال شده است.
 
-## Available Scripts
+   "نکات فنی"
 
-In the project directory, you can run:
+فناوری‌های استفاده شده:  
 
-### `npm start`
+React:                                                                                     برای ایجاد رابط کاربری تعاملی و مدیریت کامپوننت‌ها  
+TypeScript:                                                                            جهت افزایش خوانایی کد و جلوگیری از خطاهای زمان کامپایل
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  
+  "ساختار پروژه":
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ ساختار پروژه به گونه‌ای طراحی شده که هر بخش از اپلیکیشن به صورت ماژولار و با تفکیک مسئولیت‌ها مدیریت می‌شود.  
+ کامپوننت اصلی تبدیل ارز در مسیر src/Components/Currency-Converter.tsx قرار دارد.
+ استایل‌ها به صورت جداگانه در فایل src/Components/style.css نگه داشته شده‌اند.
+ فایل‌های پیکربندی پروژه مانند package.json ، tsconfig.json در ریشه پروژه قرار دارند.
+  
+   "انتخاب‌های طراحی و فنی": 
 
-### `npm test`
+ استفاده از هوک‌های useState و useCallback برای مدیریت حالت و بهینه‌سازی عملکرد کامپوننت.
+ رعایت استانداردهای Git و به کارگیری فایل .gitignore جهت جلوگیری از درج فایل‌های غیرضروری (مانند node_modules) در repository.
+ 
+  
+   "منابع استفاده شده"
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ در فرآیند توسعه این پروژه، از منابع و ابزارهایی استفاده کرده ام که نقش مهمی در ارتقای کیفیت و بهبود عملکرد پروژه ام داشته‌اند:
 
-### `npm run build`
+ ChatGPT: 
+ 
+ از هوش مصنوعی برای دریافت راهنمایی ، رفع ابهامات کدنویسی و کسب ایده‌های نوآورانه استفاده کردم .پیشنهادات مربوطه در بهبود عملکرد کدهای پروژه موثر بوده است.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  مستندات رسمی React و TypeScript:  سایت‌های رسمی React و TypeScript را به عنوان منابع مرجع استاندارد برای پیاده‌سازی دقیق پروژه مورد استفاده قرار دادم. 
+ این مستندات کمک زیادی در درک بهتر مفاهیم و انتخاب بهترین روش‌های طراحی و توسعه داشتند.
+ 
+ دوره آموزشی ویدیویی: از یک دوره جامع آموزشی ویدیویی  که مباحث پیشرفته و کاربردی مربوط به توسعه با React را پوشش می‌داد استفاده کردم. این منبع آموزشی در افزایش مهارت‌های فنی و کاربردی در پروژه نقش بسزایی داشته است.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+ لینک مشاهده ی لایو پروژه در سایت codesandbox.io =
+  از این که پروژه را مطالعه کردید ، سپاسگزارم.
